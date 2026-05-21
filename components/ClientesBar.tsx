@@ -25,9 +25,10 @@ export default function ClientesBar() {
     const speed = 0.5; // px por frame
 
     function step(ts: number) {
+      if (!track) return;
       if (start === null) start = ts;
       left -= speed;
-      if (Math.abs(left) >= track.scrollWidth / 2) {
+      if (Math.abs(left) >= (track.scrollWidth / 2)) {
         left = 0;
       }
       track.style.transform = `translateX(${left}px)`;
