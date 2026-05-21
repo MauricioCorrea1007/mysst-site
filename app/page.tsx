@@ -7,6 +7,7 @@ import ModulesSection from "@/components/ModulesSection";
 import AudienceSection from "@/components/AudienceSection";
 import Differentials from "@/components/Differentials";
 import FAQ from "@/components/FAQ";
+import ClientesBar from "../components/ClientesBar";
 import CTAFinal from "@/components/CTAFinal";
 import GuiaNR01Button from "../components/GuiaNR01Button";
 
@@ -25,6 +26,7 @@ export default function Home() {
 
       <AudienceSection />
       <Differentials />
+      <ClientesBar />
       <FAQ />
       <CTAFinal />
       <WhatsappFloat />

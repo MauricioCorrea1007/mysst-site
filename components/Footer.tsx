@@ -4,17 +4,21 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer id="contato" className="bg-dark text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <>
+      {/* Logomarcas de clientes */}
+      <footer id="contato" className="bg-dark text-gray-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 font-bold text-xl text-white mb-4">
               <ShieldCheck className="w-6 h-6 text-primary" />
-              mysst.com.br
+              Zenobia Sistemas Ltda
+              
             </div>
+            <p className="text-sm text-gray-400">CNPJ: 47.632.960/0001-00</p>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Sua plataforma digital para gestão de SST e conformidade com a NR-01.
+              Mysst é um produto da Zenobia Sistemas Ltda. Sua plataforma digital para gestão de SST e conformidade com a NR-01.
             </p>
           </div>
 
@@ -67,5 +71,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  </>);
 }
