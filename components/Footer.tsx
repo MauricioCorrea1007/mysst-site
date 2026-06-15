@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      {/* Logomarcas de clientes */}
       <footer id="contato" className="bg-dark text-gray-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -49,7 +48,7 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-primary" />
                 <span>+55 47 99609-9966</span>
                 <a
-                  href="https://wa.me/554799609966"
+                  href="https://wa.me/5547996099966"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ml-2 text-green-500 hover:text-green-600"

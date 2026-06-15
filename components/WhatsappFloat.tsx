@@ -11,7 +11,7 @@ export default function WhatsappFloat() {
         </div>
       </div>
       <a
-        href="https://wa.me/554799609966"
+        href="https://wa.me/5547996099966"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 hover:bg-green-600 rounded-full w-16 h-16 flex items-center justify-center shadow-lg border-4 border-white"

@@ -25,7 +25,7 @@ export default function NR1Form() {
       `Colaboradores: ${form.colaboradores}%0A` +
       `Cargo: ${form.cargo}`;
     // Número de destino (exemplo: 5547996099966)
-    const phone = "554799609966";
+    const phone = "5547996099966";
     const url = `https://wa.me/${phone}?text=${msg}`;
     window.open(url, "_blank");
   }
