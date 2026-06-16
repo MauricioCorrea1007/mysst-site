@@ -25,10 +25,10 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Navegue</h3>
             <div className="space-y-2 text-sm">
-              <Link href="#" className="block hover:text-primary transition-colors">Início</Link>
-              <Link href="#servicos" className="block hover:text-primary transition-colors">Serviços</Link>
-              <Link href="#como-funciona" className="block hover:text-primary transition-colors">Como funciona</Link>
-              <Link href="#faq" className="block hover:text-primary transition-colors">FAQ</Link>
+              <Link href="/" className="block hover:text-primary transition-colors">Início</Link>
+              <Link href="/solucoes" className="block hover:text-primary transition-colors">Gestão SST</Link>
+              <Link href="/#como-funciona" className="block hover:text-primary transition-colors">Como funciona</Link>
+              <Link href="/#faq" className="block hover:text-primary transition-colors">FAQ</Link>
             </div>
           </div>
 

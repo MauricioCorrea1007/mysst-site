@@ -5,16 +5,17 @@ import { Menu, X, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "#", label: "Início" },
-  { href: "#servicos", label: "Serviços" },
-  { href: "#como-funciona", label: "Como funciona" },
-  { href: "#diferenciais", label: "Diferenciais" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contato", label: "Contato" },
+  { href: "/", label: "Início" },
+  { href: "/solucoes", label: "Gestão SST" },
+  { href: "/#como-funciona", label: "Como funciona" },
+  { href: "/#diferenciais", label: "Diferenciais" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#contato", label: "Contato" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const isExternal = (href: string) => href.startsWith("http");
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
@@ -38,6 +39,8 @@ export default function Header() {
               <Link
                 key={link.label}
                 href={link.href}
+                target={isExternal(link.href) ? "_blank" : undefined}
+                rel={isExternal(link.href) ? "noopener noreferrer" : undefined}
                 className="text-sm font-medium text-gray-600 hover:text-primary transition-colors"
               >
                 {link.label}
@@ -74,6 +77,8 @@ export default function Header() {
               <Link
                 key={link.label}
                 href={link.href}
+                target={isExternal(link.href) ? "_blank" : undefined}
+                rel={isExternal(link.href) ? "noopener noreferrer" : undefined}
                 className="block text-sm font-medium text-gray-600 hover:text-primary py-2"
                 onClick={() => setMenuOpen(false)}
               >
